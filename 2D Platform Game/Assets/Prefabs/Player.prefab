@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8365455606136072051}
   - component: {fileID: 8365455606136072048}
   - component: {fileID: 8365455606136072055}
+  - component: {fileID: 1259655644}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,11 +95,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 8365455606136072060}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e631feab1d2d4b74bb3d33fa2a53421b, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018251002, y: -0.022098064}
+  m_Offset: {x: 0.010171756, y: -0.018845163}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2234428, y: 0.2864288}
+  m_Size: {x: 0.2072843, y: 0.2799229}
   m_EdgeRadius: 0
 --- !u!50 &8365455606136072048
 Rigidbody2D:
@@ -148,3 +149,25 @@ MonoBehaviour:
   JumpForce: 15
   isJumping: 0
   doubleJump: 0
+  shot: {fileID: 2846693835525432240, guid: 08fadf5ddcc4b604d9deae7b237db065, type: 3}
+  shotSpawn: {fileID: 8365455606136072049}
+  fireRate: 0.3
+--- !u!95 &1259655644
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8365455606136072060}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb3d12c6e7a743846ad4f2428fda1210, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - Attack
+  - Bricks
+  - Enemy
+  - Enemy_attack
   layers:
   - Default
   - TransparentFX
