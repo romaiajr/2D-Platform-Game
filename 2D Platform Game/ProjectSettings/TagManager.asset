@@ -3,15 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - Attack
   - Bricks
   - Enemy
   - Enemy_attack
-=======
-  tags: []
->>>>>>> c5649c4661bf85695be3707b0db9acf40cc7c8af
   layers:
   - Default
   - TransparentFX
@@ -21,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
