@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
-    private Transform attack;
+    public Rigidbody2D rb;
     public float speed;
+    public Transform player;
     
     // Start is called before the first frame update
     void Start()
     {
-        attack = GetComponent<Transform> ();
     }
 
     // Método para o ataque subir na vertical
     void FixedUpdate(){
-        attack.position += Vector3.right * speed;
+        rb.velocity = transform.right * speed;
     }
 
     // Método para quando acertar um inimigo
