@@ -20,15 +20,11 @@ private float nextFire;
 private Rigidbody2D rig;
 private Animator anim;
 
-public GameObject heart;
-
-
     // Start is called before the first frame update
     void Start(){
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         player = GetComponent<Transform> ();
-        heart = GetComponent<GameObject> ();
     }
 
     // Update is called once per frame
@@ -39,18 +35,17 @@ public GameObject heart;
     }
 
     void Move(){
-        Vector3 moviment = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += moviment * Time.deltaTime * Speed;
-       
-        if(Input.GetAxis("Horizontal") > 0f){
+        float movement = Input.GetAxis("Horizontal");
+        rig.velocity = new Vector2(movement * Speed, rig.velocity.y);
+        if(movement > 0f){
             anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f,0f,0f);
         }
-        if(Input.GetAxis("Horizontal") < 0f){
+        if(movement < 0f){
             anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f,180f,0f);
         }
-        if(Input.GetAxis("Horizontal") == 0f){
+        if(movement == 0f){
             anim.SetBool("walk", false);
         }
     }
