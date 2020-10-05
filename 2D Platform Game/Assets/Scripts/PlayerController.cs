@@ -96,14 +96,14 @@ private Animator anim;
             life -= 1;
             if(life == 0){
                 Destroy(gameObject); 
-                // SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("Menu");
             }
         }
          if(other.tag=="Enemy"){
             life -= 1;
             if(life == 0){
                 Destroy(gameObject);
-                // SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("Menu");
             }
         }
     
