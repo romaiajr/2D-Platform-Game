@@ -993,7 +993,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: New Game
 --- !u!222 &2104427769
 CanvasRenderer:
   m_ObjectHideFlags: 0

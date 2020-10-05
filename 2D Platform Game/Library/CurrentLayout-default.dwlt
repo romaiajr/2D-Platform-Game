@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 628
     height: 289
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -72,10 +72,10 @@ MonoBehaviour:
     y: 442
     width: 1225
     height: 289
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 95
+  controlID: 114
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 422
     height: 442
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -124,10 +124,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 170
+  controlID: 90
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,8 +173,8 @@ MonoBehaviour:
     y: 0
     width: 303
     height: 442
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -295,9 +295,9 @@ MonoBehaviour:
     width: 1225
     height: 731
   m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 72
+  controlID: 91
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 73
+  controlID: 92
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -514,11 +514,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Sounds
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Sounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\romai\Documents\Projetos\2D-Platform-Game\2D Platform
     Game
@@ -526,9 +526,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c43c0000
-    m_LastClickedID: 15556
-    m_ExpandedIDs: 00000000a83c0000aa3c0000ac3c0000ae3c0000b03c0000ba3c0000
+    m_SelectedIDs: 4c400000
+    m_LastClickedID: 16460
+    m_ExpandedIDs: 00000000ac3c0000ae3c0000b03c0000b23c0000b43c0000c03c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,7 +556,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a83c0000aa3c0000ac3c0000ae3c0000b03c0000
+    m_ExpandedIDs: 00000000ac3c0000ae3c0000b03c0000b23c0000b43c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -649,7 +649,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 382
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -681,18 +681,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0cc0ffff06c2ffff7ec8ffff34d0ffff16d4ffffece8ffff40edffff86f5ffffc4f5ffff6cf6ffff3cf7ffff52f7ffff5cf7ffff6ef7ffff78f7ffff82f7ffffb8f7ffff32f8ffff68f8ffff9ef8ffffd4f8ffff0af9ffff40f9ffff78f9ffff66faffff80faffff92faffff5afbffff904f0000a64f0000b04f0000c84f0000dc510000545e0000605e0000
+      m_ExpandedIDs: 96e3ffffa6ebffffa6ecffffe2ecffff5efbffffda4f00000c500000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: RestartButton
-        m_OriginalName: RestartButton
+        m_Name: Background
+        m_OriginalName: Background
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 20424
+        m_UserData: 20646
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
