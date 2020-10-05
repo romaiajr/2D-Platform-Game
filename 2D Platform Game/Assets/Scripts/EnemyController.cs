@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
             psystem.Play();
             if(life == 0){
                 Destroy(gameObject);
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("You Win");
             }
         }
     }

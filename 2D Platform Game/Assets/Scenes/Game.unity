@@ -14270,7 +14270,7 @@ PrefabInstance:
     - target: {fileID: 8835864406650000684, guid: 4b806c17a61919749ab58fbd516501f3,
         type: 3}
       propertyPath: life
-      value: 35
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8835864406650000684, guid: 4b806c17a61919749ab58fbd516501f3,
         type: 3}
