@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     private Transform enemy;
     public float fireRate = 0.997f;
     public GameObject attack;
+    [SerializeField] ParticleSystem psystem = null;
     void Start()
     {
         enemy = GetComponent<Transform>();
@@ -29,6 +30,7 @@ public class EnemyController : MonoBehaviour
         if(other.tag=="Attack")
         {
             life -= 1;
+            psystem.Play();
             if(life == 0){
                 Destroy(gameObject);
                 SceneManager.LoadScene("Menu");
