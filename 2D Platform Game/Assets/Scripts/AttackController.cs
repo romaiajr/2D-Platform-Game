@@ -6,7 +6,6 @@ public class AttackController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed;
-    public Transform player;
     
     // Start is called before the first frame update
     void Start()

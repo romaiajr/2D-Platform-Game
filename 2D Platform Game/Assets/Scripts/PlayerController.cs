@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 private Transform player;    
 public float Speed;
 public float JumpForce;
+public int life = 3;
 
 public bool isJumping;
 public bool doubleJump;
@@ -92,5 +93,22 @@ private Animator anim;
 			nextFire = Time.time + fireRate;
 			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 		}
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag=="Enemy_attack"){
+            life -= 1;
+            if(life == 0){
+                Destroy(gameObject);
+            }
+        }
+         if(other.tag=="Enemy"){
+            life -= 1;
+            if(life == 0){
+                Destroy(gameObject);
+                // isGameOver = true;
+            }
+        }
+    
     }
 }
