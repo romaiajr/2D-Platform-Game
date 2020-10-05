@@ -13,9 +13,7 @@ public class EnemyAttackController : MonoBehaviour{
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Player"){
-            //  Destroy(other.gameObject);
             Destroy(gameObject);
-            // GameOver.isPlayerDead = true;
         }
         if(other.tag == "Bricks"){
             Destroy(gameObject);

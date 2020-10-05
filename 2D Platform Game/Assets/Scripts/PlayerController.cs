@@ -16,10 +16,10 @@ public GameObject shot;
 public Transform shotSpawn;
 public float fireRate;
 private float nextFire;
-
-
 private Rigidbody2D rig;
 private Animator anim;
+
+public GameObject heart;
 
 
     // Start is called before the first frame update
@@ -27,6 +27,7 @@ private Animator anim;
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         player = GetComponent<Transform> ();
+        heart = GetComponent<GameObject> ();
     }
 
     // Update is called once per frame
@@ -99,7 +100,7 @@ private Animator anim;
         if(other.tag=="Enemy_attack"){
             life -= 1;
             if(life == 0){
-                Destroy(gameObject);
+                Destroy(gameObject); 
             }
         }
          if(other.tag=="Enemy"){

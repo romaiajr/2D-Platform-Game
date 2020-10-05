@@ -8,6 +8,7 @@ TagManager:
   - Bricks
   - Enemy
   - Enemy_attack
+  - Heart
   layers:
   - Default
   - TransparentFX

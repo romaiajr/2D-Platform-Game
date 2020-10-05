@@ -9809,6 +9809,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8365455606136072055, guid: 35b92845e80a956479491a6ba5c53e97,
+        type: 3}
+      propertyPath: heart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365455606136072055, guid: 35b92845e80a956479491a6ba5c53e97,
+        type: 3}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365455606136072055, guid: 35b92845e80a956479491a6ba5c53e97,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8365455606136072060, guid: 35b92845e80a956479491a6ba5c53e97,
         type: 3}
       propertyPath: m_Name
@@ -9872,7 +9887,12 @@ PrefabInstance:
     - target: {fileID: 8835864406650000684, guid: 4b806c17a61919749ab58fbd516501f3,
         type: 3}
       propertyPath: fireRate
-      value: 0.992
+      value: 0.997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835864406650000684, guid: 4b806c17a61919749ab58fbd516501f3,
+        type: 3}
+      propertyPath: life
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8835864406650000722, guid: 4b806c17a61919749ab58fbd516501f3,
         type: 3}
