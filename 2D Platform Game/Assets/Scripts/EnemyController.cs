@@ -30,6 +30,7 @@ public class EnemyController : MonoBehaviour
             life -= 1;
             if(life == 0){
                 Destroy(gameObject);
+                // SceneManager.LoadScene("SampleScene");
             }
         }
     }

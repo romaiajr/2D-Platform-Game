@@ -178,11 +178,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 7
   JumpForce: 15
+  life: 1
   isJumping: 0
   doubleJump: 0
   shot: {fileID: 2846693835525432240, guid: 08fadf5ddcc4b604d9deae7b237db065, type: 3}
   shotSpawn: {fileID: 1241896146}
   fireRate: 0.5
+  heart: {fileID: 0}
 --- !u!95 &1259655644
 Animator:
   serializedVersion: 3

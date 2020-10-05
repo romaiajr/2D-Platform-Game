@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -69,7 +70,6 @@ public GameObject heart;
                     doubleJump = false;
                 }
             }
-            
         }
     }
 
@@ -77,7 +77,7 @@ public GameObject heart;
         if(collision.gameObject.layer == 8)
         {
             isJumping = false;
-            anim.SetBool("jump", false);
+            anim.SetBool("jump", false);            
         }
     }
 
@@ -101,13 +101,14 @@ public GameObject heart;
             life -= 1;
             if(life == 0){
                 Destroy(gameObject); 
+                // SceneManager.LoadScene("SampleScene");
             }
         }
          if(other.tag=="Enemy"){
             life -= 1;
             if(life == 0){
                 Destroy(gameObject);
-                // isGameOver = true;
+                // SceneManager.LoadScene("SampleScene");
             }
         }
     
