@@ -258,3 +258,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 50
+  fireRate: 0.997
+  attack: {fileID: 0}
+  psystem: {fileID: 0}

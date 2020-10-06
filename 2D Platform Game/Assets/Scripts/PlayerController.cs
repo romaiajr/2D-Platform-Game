@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -8,10 +9,12 @@ public class PlayerController : MonoBehaviour
 private Transform player;    
 public float Speed;
 public float JumpForce;
-public int life = 3;
+public int life;
+[SerializeField] ParticleSystem psystem = null;
 
 public bool isJumping;
 public bool doubleJump;
+public Text restart;
 
 public GameObject shot;
 public Transform shotSpawn;
@@ -25,6 +28,7 @@ private Animator anim;
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         player = GetComponent<Transform> ();
+        restart = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,9 @@ private Animator anim;
         Move();
         Jump();
         Attack();
+        if(life == 0){
+            restart.enabled = true;
+        }
     }
 
     void Move(){
@@ -94,6 +101,7 @@ private Animator anim;
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag=="Enemy_attack"){
             life -= 1;
+            psystem.Play();
             if(life == 0){
                 Destroy(gameObject); 
                 // SceneManager.LoadScene("Menu");
@@ -101,8 +109,10 @@ private Animator anim;
         }
          if(other.tag=="Enemy"){
             life -= 1;
+            psystem.Play();
             if(life == 0){
                 Destroy(gameObject);
+                Destroy(other.gameObject);
                 // SceneManager.LoadScene("Menu");
             }
         }

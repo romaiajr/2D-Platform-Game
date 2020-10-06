@@ -20,7 +20,7 @@ public class EnemyAttackController : MonoBehaviour{
         }
         if(other.tag == "Attack"){
             Destroy(other.gameObject);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
